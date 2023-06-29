@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: Human;
+            src: url('./human.TTF') format("truetype");
+            font-weight: normal
+        }
+
+        *, *:before, *:after {
+            padding: 0px;
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: brown;
+            text-align: center;
+            font-size: 2.125rem;
+            margin-bottom: 10px;
+        }
+
+        form {
+            background-color: pink;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-family: 'Human', serif;
+            background: orange;
+        }
+
+        p + p{
+          margin-top: 1.125rem;  
+        }
+
+        p > label { 
+            color: blue;
+        }
+
+        p  {
+            font-family: 'Human', serif;
+        }
+
+        p#subTitleP {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>설문지</h2>
+    <p id="subTitleP">소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>    
+    <form>
+        <p>
+            <label for="grade">학년</label>
+            <input type="radio" name="grade" id="grade" value="grade" checked>1학년
+            <input type="radio" name="grade" id="grade" value="grade">2학년
+            <input type="radio" name="grade" id="grade" value="grade">3학년
+        </p>
+        <p>
+            <label for="gender">성별</label>
+            <input type="radio" name="gender" id="gender" value="gender">남
+            <input type="radio" name="gender" id="gender" value="gender">여
+        </p>
+        <p>
+            <label for="inter">관심 분야</label>
+            <select name="subjects" id="inter">
+                <option value="1" selected>웹서비스</option>
+                <option value="2">AI</option>
+                <option value="3">빅데이터</option>
+                <option value="4">메타버스</option>
+            </select>
+        </p>
+        <p>
+            <label for="job">진로</label>
+            <input type="checkbox" name="job" for="job" checked>기획
+            <input type="checkbox" name="job" for="job">개발
+            <input type="checkbox" name="job" for="job">창업
+        </p>
+
+        <p>
+            <label for="something">남기고 싶은 말</label>
+            <textarea placeholder="말을 남겨주세요" id="something" rows="5" cols="50"></textarea>
+        </p>
+    </form>
+
+    <footer>
+        Copyright 2021 by Y.N.
+    </footer>
+</body>
+</html>

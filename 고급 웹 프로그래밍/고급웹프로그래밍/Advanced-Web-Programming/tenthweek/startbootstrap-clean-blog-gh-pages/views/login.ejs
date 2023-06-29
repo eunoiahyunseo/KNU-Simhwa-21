@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layout/header') -%>
+
+    <body>
+        <!-- Navigation-->
+        <%- include('layout/navbar') -%>
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/assets/img/register.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Login</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                            <form  action="/users/login" method="POST" enctype="multipart/form-data">
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls controls">
+                                        <label for="username">User Name</label>
+                                        <input class="form-control" id="username" type="text" placeholder="User Name" name="username"/>
+                                    </div>
+                                    <div class="form-group floating-label-form-group controls controls">
+                                        <label for="password">Password</label>
+                                        <input class="form-control" id="password" type="password" placeholder="Password" name="password"/>
+                                    </div>
+                                </div>
+                                <br />
+                                <button class="btn btn-primary" id="submitButton" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <%- include('layout/footer') -%>
+
+        <!-- Bootstrap core JS-->
+        <%- include('layout/scripts') -%>
+
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

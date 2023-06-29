@@ -1,0 +1,183 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+}
+
+/* p3 {
+  color: green !important;
+  color: blue;
+  color: red;
+  background-color: yellow;
+}
+
+
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main {
+    text-align: center;
+}
+
+#id1 {
+    color: blue;
+    background-color: pink;
+} */
+
+/* h1[text] {
+  color: red;
+  background-color: gray;
+  margin: 10px;
+}
+
+p[text] {
+  color: blue;
+  background-color: yellow;
+  margin: 10px;
+}
+
+h1[text="attr3"] {
+  color: green;
+  background-color: pink;
+} */
+
+/* p[text] {
+  color: red;
+  margin: 10px;
+}
+
+p[text="red"] {
+  color: yellow;
+  background-color: purple;
+}
+
+p[text~="bb"] {
+  color: yellow;
+  background-color: green;
+}
+
+p[text|="a1"] {
+  color: yellow;
+  background-color: blue;
+}
+
+p[text^="img"] {
+  color: yellow;
+  background-color: red;
+}
+
+p[text$=".png"] {
+  color: yellow;
+  background-color: gray;
+}
+
+p[text*="ong"] {
+  color: yellow;
+  background-color: pink;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+a:active {
+  background-color: yellow;
+}
+
+div.d1 {
+  border: 1px dashed red;
+  width: 400px;
+  padding: 5px;
+}
+
+div.d1:hover {
+  background-color: yellow;
+}
+
+div.d2 {
+  border: 1px dashed green;
+  width: 400px;
+  padding: 5px;
+}
+
+div.d2:hover {
+  background-color: green;
+}
+
+h4 {
+  margin: 10px;
+}
+
+h4:first-child {
+  color: blue;
+  font-size: 20px;
+}
+
+h4:last-child {
+  color: red;
+} */
+
+/* div {
+  color: white;
+}
+
+h2:first-letter {
+  font-size: 30px;
+  color: red;
+  text-transform: uppercase;
+}
+
+h3::first-line {
+  color: blue;
+}
+
+input:focus {
+  background-color: red;
+}
+
+input:checked + div.d1 {
+  background-color: gray;
+}
+
+input:checked + div.d2 {
+  background-color: black;
+} */
+
+/* div {
+  background-color: yellow;
+  width: 300px;
+  padding: 25px;
+  border: 15px solid navy;
+  margin: 25px;
+  display: inline-block;
+} */
+
+p {
+  border: 1px solid red;
+  width: 500px;
+
+  display: inline-block;
+}
+
+p + p {
+  margin-top: 2rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *, *:before, *:after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        table {
+            margin: auto;
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 5px 10px;
+            margin: 2px;
+            border: 1px solid #000;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body id="body">
+    <table id="mainTable">
+
+    </table>
+    <script type="text/javascript">
+        let table = document.createElement("table");
+        let thead = document.createElement("thead");
+        let tbody = document.createElement("tbody");
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        
+
+        // 헤더
+        let row_1 = document.createElement("tr");
+        let heading_1, i, j;
+        for(i = 0; i < 9; i++) {
+            heading_1 = document.createElement("th");
+            heading_1.innerText = `${i + 1}단`;
+            row_1.appendChild(heading_1);
+        }
+        thead.appendChild(row_1);
+
+        let row_2;
+        let row_2_data;
+        for(i = 1; i <= 9; i++) {
+            row_2 = document.createElement("tr");
+            for(j = 1; j <= 9; j++) {
+                row_2_data = document.createElement("td");
+                row_2_data.innerText = `${j}*${i}=${i * j}`
+                row_2.appendChild(row_2_data);
+            }
+            tbody.append(row_2);
+        }
+            
+
+        
+
+        document.getElementById("body").appendChild(table);
+    </script>
+</body>
+</html>

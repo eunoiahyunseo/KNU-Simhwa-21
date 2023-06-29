@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <a href="https://www.naver.com" target="_blank" style="float:left;margin-right:10px">
+        <img src="./test.jpg" width="200px" heigh="300px" title="naver로 이동" alt="test.jpg" />
+        <figcaption>[그림1] HTML5</figcaption>
+    </a>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo omnis sunt ut? Necessitatibus provident veritatis dolorem laudantium eveniet dolores sunt repellat ducimus nobis quam earum, velit suscipit placeat quia ea aperiam blanditiis itaque neque id quisquam? Doloribus ea rem aut nihil quibusdam, facilis earum, et ex ratione deleniti cum fuga eaque sint placeat voluptas quos nemo ad illum adipisci deserunt laudantium? Veritatis sed id quisquam illo eaque aspernatur iusto architecto. In, voluptate odio? Et, reprehenderit aliquam fuga quidem architecto nam quibusdam repellendus explicabo quod ipsa maiores mollitia, praesentium sunt, quae illum commodi doloremque alias nihil sint provident fugiat enim molestias! Voluptatum laborum perferendis minima ex odit, natus itaque pariatur velit maiores doloremque dolores aut cum iste officiis esse, a quisquam necessitatibus dolorum ad nisi. Soluta, aliquid distinctio, exercitationem adipisci dignissimos quas sit nesciunt ea optio repellendus nemo quaerat explicabo sapiente tenetur voluptatibus in voluptatem architecto veritatis facere? Voluptas, repudiandae! Similique, inventore praesentium suscipit veritatis blanditiis quibusdam dignissimos tempore incidunt porro consectetur sit, ex quaerat. Magni impedit saepe temporibus fugit aut voluptas. Quod fugiat corporis quis neque laudantium sunt delectus itaque est ipsa, maxime consectetur, natus temporibus quo illum harum, perspiciatis deserunt quia. Repellendus sed illo commodi distinctio. Totam recusandae, odit incidunt iste quis nemo nihil reprehenderit a sint vitae inventore amet doloremque blanditiis molestias cupiditate eveniet, aliquid est voluptatibus quaerat suscipit architecto ducimus eum tempora nostrum! Laudantium ex tempora est quod ut neque, dolorum libero vel, ad mollitia perspiciatis laborum. Dolores nemo ex expedita atque in laboriosam, assumenda, nulla quia voluptatem iusto aliquam voluptatum recusandae tenetur velit fuga numquam repudiandae reiciendis eligendi doloribus debitis commodi libero vero dolorum? Esse soluta numquam facere quo, deserunt voluptates cumque eos nihil aliquid maxime nulla eligendi neque minima incidunt iusto corporis laborum vel non veritatis dignissimos accusamus tenetur saepe a officia! Dicta error sint architecto fugiat iure qui deserunt ex saepe laboriosam minima tenetur quaerat quisquam similique alias, dolor a sequi voluptate laborum aperiam. Nobis, obcaecati eos dolores consequatur temporibus alias natus impedit excepturi omnis! Porro deserunt eius dolor aliquid, nostrum maiores laborum quos consequuntur tenetur repudiandae voluptatum? Odio est dolorum at, consectetur commodi dolore. Delectus suscipit quisquam, molestias explicabo repudiandae nesciunt fugiat, porro nisi corporis laudantium fugit enim animi alias aperiam assumenda velit perferendis ad nam eligendi consequatur sapiente. Facilis repudiandae ut sit magnam? Doloremque blanditiis voluptatum aliquid quasi ullam! Odio tenetur accusamus dolores eligendi, perferendis neque unde magni mollitia, doloremque ut nulla debitis sunt minima. Consequatur sed architecto repellat minima eum! Assumenda reiciendis quibusdam voluptate ex accusamus provident sit a nemo molestias dicta. Rem, distinctio voluptas ullam corrupti accusamus inventore praesentium odit facilis sapiente! Repudiandae quas hic enim iste nobis sequi. Id optio alias reprehenderit assumenda corrupti deserunt dolorem, voluptatem culpa accusantium dolore et, temporibus repudiandae. Recusandae doloribus nobis eius cumque sit. Illum sequi sunt corrupti incidunt est veritatis, dolorem in dolores provident dolorum, unde, magnam qui. Fugiat natus soluta architecto dolorum? Nesciunt natus consequuntur aperiam quos eligendi adipisci error facilis laborum asperiores neque. Iste alias voluptatem nobis eaque quod quisquam.
+
+    <hr />
+    
+    <audio src="audio_file.mp3" controls loop autoplay></audio>
+
+    <audio controls>
+        <source src="chicken.mp3" type="audio/mpeg"> 
+        오디오 파일을 재생할 수 없습니다.
+    </audio>
+
+    <object type="application/pdf" data="/1_3. HTML 멀티미디어태그.pdf" width="250" height="200">
+    </object>
+
+    <h1>iframe</h1>
+    <iframe src="https://www.naver.com" title="내용" width="50%" height="300px" style="border:2px dashed red;"></iframe>
+
+    <fieldset style="height: 1500px;">
+        <legend>form tag</legend>
+        <br action="test.php" method="POST">
+            <label for="name">이름: </label> 
+            <input type="text" id="name" name="name" ><br />
+            
+            <label for="major">전공: </label> 
+            <input type="text" id="major" name="major" ><br />
+            
+            <input type="checkbox" name="subject" value="HTML5" checked>HTML5 <br />
+            <input type="checkbox" name="subject" value="CSS3"> CSS <br />
+            <input type="checkbox" name="subject" value="JavaScript">Javascript <br />
+            <input type="checkbox" name="subject" value="JQuery">Jquery
+
+            
+            <br />
+            <select name="subjects" size="4" multiple>
+                <option value="1" selected>HTML5</option>
+                <option value="2" >CSS3</option>
+                <option value="3" >Javascript</option>
+                <option value="4" selected >Jquery</option>
+            </select>
+            <br />
+            <select name="major">
+                <optgroup label="computer">
+                    <option>Software</option>
+                    <option>Robot</option>
+                    <option>System</option>
+                </optgroup>
+                <optgroup label="language">
+                    <option selected>Korea</option>
+                    <option>China</option>
+                    <option>Germany</option>
+                </optgroup>
+            </select>
+            <br />
+
+            <input type="text" list="majorlist" name="major">
+            <datalist id="majorlist">
+                <option value="Software">소프트웨어</option>
+                <option value="Robot">로봇</option>
+                <option value="System">시스템</option>
+                <option value="Service">서비스</option>
+                <option value="Education">교육</option>
+            </datalist>
+
+            <br />
+
+            <h3>오늘 날짜 입력</h3>
+            Today : <input type="date" name="today">
+            <h3>프로젝트 수행 기간</h3>
+            From : <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+            To : <input type="date" name="to" min="2018-03-01" max="2018-06-30">
+
+            <br />
+
+            <h3>생일 (년/월) 입력</h3>
+            생일 :  <input  type="month" name="birth">
+            <br />
+
+            <h3>원하는 색상을 선택하세요</h3>
+            <input type="color" name="color_value" value="#0000ff">
+
+            <br />
+
+            <h3>나이를 입력하세요.</h3>
+            <input type="number" name="count" min="1" max="130">
+
+            <br />
+
+            <h3>0~100범위에서 원하는 지점을 선택하세요.</h3>
+            <input type="range" name="point" min="0" max="100">
+            <br />
+            <h3>이메일을 정확하게 입력하세요.</h3>
+            이메일 : <input type="email" name="myemail">
+            <br />
+
+            <h3>검색어를 입력하세요.</h3>
+            구글검색 : <input type="search" name="googlesearch">
+            <br />
+            <h3>학습량 그래프</h3>
+            이현서1 : <meter min="0" max="100" optimum="50" value="60">60 out of 100</meter><br />
+            이현서2 : <meter low="0.3" high="0.5"value="0.22">22%</meter><br />
+            이현서3 : <meter low="0.25" high="0.73" optimum="0.8" value="0.22">22%</meter><br />
+            
+            <h3>작업 진행율</h3>
+            초기 작업 : <progress value="22" max="100" title="진행율">22%</progress></br>
+            중간 작업 : <progress value="0.77" max="1" title="진행율">77%</progress></br>
+            다음 작업 : <progress value="0.98" max="1" title="진행율">98%</progress></br>
+            <br />
+
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+
+        </form>
+    </fieldset>
+
+    <div class="griContainer">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+        <div class="grid6">6</div>
+        <div class="grid7">7</div>
+        <div class="grid8">8</div>
+        <div class="grid9">9</div>
+        
+    </div>
+</body>
+</html>

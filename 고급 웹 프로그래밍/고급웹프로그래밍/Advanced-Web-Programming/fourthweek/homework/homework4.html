@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #contents {
+            height: 1000px;
+            background: url('../test.jpg') no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        #contents > h1 {
+            position: absolute;
+            font-size: 120px;
+            color: white;
+            right: 100px;
+            bottom: 100px;
+            text-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <h1>CSS3</h1>
+    </div>
+</body>
+</html>

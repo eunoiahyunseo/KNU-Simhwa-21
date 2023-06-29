@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h3>N 팩토리얼 계산 값을 입력하시오</h3>
+
+    <input type="text" name="factorial" id="factorial">
+    <input type="button" value="N 팩토리얼 계산" id="factorialSubmit">
+
+    <div id="factorialResult">
+
+    </div>
+
+    <script>
+        const inputNumber = document.getElementById("factorial")
+        document.getElementById("factorialSubmit").addEventListener('click', () => {
+            let number = parseInt(inputNumber.value, 10);
+            let number_ = number;
+            let resultNumber = number;
+            if(number == 0) {
+                resultNumber = 1;
+            } else {
+                while(number && number >= 2) {
+                    resultNumber *= --number;
+                }
+            }
+            document.getElementById("factorialResult").innerHTML = `${number_}!계산 결과는${resultNumber}입니다.`;
+        })
+    </script>
+</body>
+</html>

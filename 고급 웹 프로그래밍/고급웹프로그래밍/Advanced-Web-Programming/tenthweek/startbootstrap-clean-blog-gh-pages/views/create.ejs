@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layout/header') -%>
+
+    <body>
+        <!-- Navigation-->
+        <%- include('layout/navbar') -%>
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/assets/img/contact-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Create New Post</h1>
+                            <span class="subheading">Have questions? I have answers.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                            <form  action="/posts/store" method="POST" enctype="multipart/form-data">
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls controls">
+                                        <label for="name">Title</label>
+                                        <input class="form-control" id="title" type="text" placeholder="Title" name="title"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls controls" >
+                                        <label for="body">Description</label>
+                                        <textarea rows="5" class="form-control" id="body" name="body">
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls controls" >
+                                        <label for="image">Image</label>
+                                        <input type="file" class="form-control" id="image" name="image">
+                                    </div>
+                                </div>
+                                <br />
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <%- include('layout/footer') -%>
+
+        <!-- Bootstrap core JS-->
+        <%- include('layout/scripts') -%>
+
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

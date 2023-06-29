@@ -1,0 +1,14 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "HW03",
+  "main": "index.js",
+  "scripts": {},
+  "author": "hyunseo Lee",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.0",
+    "cheerio": "^1.0.0-rc.10",
+    "pretty": "^2.0.0"
+  }
+}

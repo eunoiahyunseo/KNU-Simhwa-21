@@ -1,0 +1,269 @@
+div.d1, div.d2, div.d3 {
+    background-color: yellow;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+html, body {
+    height : 100%;
+    background-color: #EEE;
+}
+
+div.d1 {
+    width: 50%;
+    height: 20%;
+    margin: 20px auto;
+}
+
+div.d2 {
+    border: medium dotted;
+    border-color: navy red fuchsia black;
+}
+
+div.d3 {
+    /* border-radius: 50%; */
+    box-shadow: 10px 10px 10px 5px #EEF;
+}
+
+
+div.d4 {
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+}
+
+div.d4 > .inner_d4 {
+    background-color: aqua;
+    height: 200px;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+div.inner_d4 > span{
+    position: relative;
+    overflow: hidden;
+    display: inline-table;
+}
+
+div.inner_d4 > span:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    background-color: rgba(255, 212, 0, 0.6);
+    transition: all .35s;
+}
+
+div.inner_d4:hover :before {
+    left: 0;
+}
+
+div.outerContainer {
+    position: relative;
+}
+
+.sp {
+    position: static;
+    left: 30px;
+    background-color: cyan;
+    width: 400px;
+    height: 50px;
+}
+
+.rp1 {
+    position: absolute;
+    background-color: orange;
+    height: 100px;
+    left: 30px;
+    top: -10px;
+}
+
+.rp2 {
+    background-color: lightgreen;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    left: 60px;
+    top: 20px;
+}
+
+.rp3 {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+}
+
+.div1 {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    height: 500px;
+    float: right;
+}
+
+.div2 {
+    border: 1px solid red;
+    overflow: auto;
+}
+
+.div3 {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    float: left;
+}
+
+.div4 {
+    border: 1px solid red;
+    clear: both;
+}
+
+/* div {
+    border: 3px solid blue;
+} */
+
+.fix {
+    overflow: auto;
+}
+
+nav {
+    width: 200px;
+    border: 3px solid #73AD21;
+    float: left;
+}
+
+section {
+    margin-left: 206px;
+    border: 3px solid red;
+}
+
+/* div[class="background"] {
+    background: url('./img.jpg') center/70% no-repeat;
+    
+    border: 1px solid black;
+    height: 50vh;
+}
+
+div.box {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 2px solid blue;
+    opacity: 0.5;
+} */
+
+/* body {
+    background: url('./img.jpg') center;
+    background-attachment: fixed;
+} */
+
+img.image1 {
+    height: 100vh;
+    width: 100vw;
+    background-attachment : fixed;
+}
+
+/* #grad1 {
+    height: 70px;
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(to right, yellow 50%, white 50%)
+}
+
+div.c1outer {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background: yellow;
+    cursor: pointer;
+}
+
+.c1asdf.rp3 {
+    transform:  scale(0.7);
+} */
+
+
+/* div {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border: 1px solid red;
+    transition: width 3s ease, height 3s ease, border 3s ease, transform 2s ease;
+}
+
+div:hover {
+    width: 200px;
+    height: 200px;
+    border: 3px solid blue;
+    transform: rotate(360deg);
+} */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: boxmove 3s ease infinite alternate;
+    animation-delay: 3s;
+    cursor: pointer;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes boxmove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 300px;
+    }
+} */
+
+
+div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+}
+
+#b1 {
+    left: 10px;
+    background-color: red;
+    animation-duration: 5s;
+}
+
+#b2 {
+    left: 50px;
+    background-color: blue; 
+    animation-duration: 10s;
+}
+
+
+@keyframes bounce {
+    from, to {
+        bottom: 0px;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: 200px;
+        animation-timing-function: ease-in;
+    }
+}
+
+
+

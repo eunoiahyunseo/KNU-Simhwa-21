@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
+}
+
+.testPTag {
+  position: relative;
+}
+
+.testPTag p {
+  display: inline-block;
+}
+
+.testPTag p:first-child::after {
+  content: "|";
+}

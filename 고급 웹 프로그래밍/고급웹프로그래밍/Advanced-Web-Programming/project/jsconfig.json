@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "strict": true,
+        "target": "esnext",
+        "baseUrl": ".",
+        "paths": {
+            "#/*": ["./src/*"],
+        }
+    },
+    "include": ["next.config.js", "**/*.js", "**/*.jsx", "pages/**/*", "src/**/*"]
+}

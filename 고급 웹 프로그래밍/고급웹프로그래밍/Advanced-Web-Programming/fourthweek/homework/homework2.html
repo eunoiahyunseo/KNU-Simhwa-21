@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after {
+            margin: 0px;
+            padding: 0px;
+            
+            box-sizing: border-box;            
+        }
+
+        #title {
+            background-color: gray;
+            width: 1200px;
+            height: 120px;
+        }
+
+        #contentOuterContainer {
+            display: flex;
+            flex-direction: row;
+    
+        }
+        
+        .sidebar {
+            background-color: beige;
+            width: 200px;
+            height: 600px;
+        }
+
+        #content {
+            width: 800px;
+            height: 600px;
+            background-color: white;
+        }
+
+        #footer {
+            width: 1200px;
+            height: 100px;
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div id="title">
+            <strong>사이트 제목</strong>
+        </div>
+
+        <div id="contentOuterContainer">
+            <div class="sidebar">
+                사이드바
+            </div>
+            <div id="content">
+                본문
+            </div>
+            <div class="sidebar">
+                사이드바
+            </div>
+        </div>
+
+        <div id="footer">
+            푸터
+        </div>
+    </div>
+</body>
+</html>

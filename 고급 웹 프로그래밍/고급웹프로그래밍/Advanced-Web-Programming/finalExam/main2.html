@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *, *:before, *:after {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #EEE;
+        }
+
+        div#outerContainer {
+            background-color: white;;
+            padding: 25px 20px;
+            letter-spacing:1.1px;
+            box-shadow: 10px 10px 25px 5px gray;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            border-radius: 10px;
+        }
+
+        div#outerContainer div {
+            display: inline-block;
+            width: 70%;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        div#outerContainer div:hover {
+            background-color: yellow;
+        }
+
+        .red {
+            color: red;
+            border: 1px solid blue;
+        }
+
+        img {
+            width: 200px;
+            height :200px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        div.out {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .moving {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            position: relative;
+            left: -400px;
+        }
+
+    </style>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="outerContainer">
+        <div class="innerDiv">Hello World1</div>
+        <div class="innerDiv">Hello World2</div>
+        <div class="innerDiv">Hello World3</div>
+        <div class="innerDiv" id="Dominsert">Hello World4</div>
+
+    </div> 
+
+    <a href="#" onclick="newScope.add()">DOM Element 추가하기</a>
+
+    <br>
+    <!-- <p>메시지 : 제이쿼리를 공부하고 있습니다.</p>
+    <button class="hide">메시지 삭제</button>
+    <button class="show">메시지 보기</button>
+
+    <h2>질문1: 대한민국의 수도는 어디입니까?</h2>
+    <p class="q1">[정답 보기]</p>
+    <ans class="q1">대한민국의 수도는 <strong>서울</strong>입니다.</ans> -->
+
+    <!-- <div class="out">
+        <p>마우스 이벤트 알아보기</p>
+        <p>0</p>
+    </div> -->
+
+    <!-- <h1>HTML5</h1>
+    <h2>CSS3</h2>
+    <p>자바스크립트</p>
+    <button>CSS 적용/해제</button> -->
+
+    
+    <!-- <button id="out">fadeOut</button>
+    <button id="in">fadeIn</button>
+    <p></p>
+    <img name="pic1" src="./img.jpg">
+     -->
+
+     <div class="init">
+        <button type="button" onclick="back('.moving img')")>초기화 상태</button>
+     </div>
+     <div class="moving">
+        <img onclick="move(this, 6000)" src="./img.jpg">
+        <img onclick="move(this, 3000)" src="./img.jpg">
+        <img onclick="move(this, 1000)" src="./img.jpg">
+     </div>
+    <script src="./main.js"></script>
+
+</body>
+</html>

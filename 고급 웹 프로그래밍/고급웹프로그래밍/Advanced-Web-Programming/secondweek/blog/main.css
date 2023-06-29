@@ -1,0 +1,24 @@
+body,
+body::before,
+body::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+fieldset {
+  width: 50%;
+}

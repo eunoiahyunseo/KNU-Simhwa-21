@@ -1,0 +1,66 @@
+/* div.out {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000000;
+    text-align: center;
+    background-color: yellow;
+    margin: auto;
+} */
+
+/* .important {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.blue {
+    color: blue;
+} */
+
+/* .red {
+    color: red;
+    border: 1px solid blue;
+} */
+
+
+/* div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+    background: yellow;
+}
+
+.box {
+    background: red;
+} */
+
+/* #slide, #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    bordeR: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 70px;
+    display: none;
+    background-color: #ffff00;
+} */
+
+
+.moving {
+    border: 1px solid black;
+    margin: 20px auto 0 auto;
+    text-align: right;
+    
+}
+
+.moving img {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 20px 10px;
+    
+    
+}
+

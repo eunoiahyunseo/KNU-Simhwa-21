@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+#js > div {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#js button[id="test1"] {
+  background-color: whitesmoke;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#js button[id="test1"]:hover {
+  transform: translateY(-10px);
+}
+
+#js p > span {
+  position: relative;
+}
+
+#js #innerDiv {
+  position: absolute;
+  top: 0px;
+  font-weight: bold;
+  left: -100%;
+  background-color: yellow;
+}
+
+#outerContainer {
+  margin: auto;
+  max-width: 510px;
+  padding: 20px;  
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+}
+
+#outerContainer span {
+  position: relative;
+  display: inline-table;
+  overflow: hidden;  
+}
+
+#outerContainer > span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background-color: rgba(255, 200, 0, 0.5);
+  transition: all .5s ease;
+}
+
+#outerContainer:hover span:before {
+  left: 0;
+}

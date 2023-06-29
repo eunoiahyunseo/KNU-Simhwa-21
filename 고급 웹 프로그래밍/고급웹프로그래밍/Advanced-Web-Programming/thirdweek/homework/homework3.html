@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *, *:before, *:after {
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: border-box;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        body.main {
+            background-color: aqua;
+            padding: 5px;
+        }
+        
+        h3 {
+            color: green;
+            font-size: 30px;
+            padding: 20px 10px;
+        }
+
+        hr {
+            color: gray;
+        }
+
+        div#center {
+            text-align: center;
+            padding: 10px;
+        }
+
+        div#center > strong {
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+        }
+
+        div.indent {
+            text-align: center;
+        }
+
+        div.indent > p > em {
+            color: green;
+            font-style: italic;
+        }
+
+        div.indent strong {
+            color: red;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body class="main">
+    <h3>얼굴</h3>
+    <hr>
+    <div id="center"><strong>박인희</strong></div>
+    <div class="indent">
+        <p><em>길</em>을 걷고 산들 무엇하리
+        <strong>꽃</strong>이 내가 아니듯 내가 <strong>꽃</strong>이 될 수 없는
+        지금...</p>
+    </div>
+</body>
+</html>

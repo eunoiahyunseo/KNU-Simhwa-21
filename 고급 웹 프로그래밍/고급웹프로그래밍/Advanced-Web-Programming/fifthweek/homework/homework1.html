@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>색이름과 색</h1>
+    <hr />
+    <div id="colorBoxContainer">
+
+    </div>
+    <script>
+        let colorDiv;
+        const container = document.getElementById("colorBoxContainer");
+        const colorNames = ["maroon", "red", "orange", "yellow", "olive", 
+                            "purple", "fuchsia", "white", "lime", "green",
+                            "navy", "blue", "aqua", "teal", "black", "silver", "gray"];
+
+        for(let i = 0; i < colorNames.length; i++) {
+            colorDiv = document.createElement("div");
+            colorDiv.style.cssText = `background-color: ${colorNames[i]}; display: inline-block; width: 15%; height: 6rem; line-height: 6rem;`;
+            colorDiv.innerText = colorNames[i];
+            container.appendChild(colorDiv);
+        }
+
+    </script>
+</body>
+</html>

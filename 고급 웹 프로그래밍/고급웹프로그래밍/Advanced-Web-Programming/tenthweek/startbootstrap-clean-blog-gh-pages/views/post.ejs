@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layout/header') -%>
+
+    <body>
+        <!-- Navigation-->
+        <%- include('layout/navbar') -%>
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('<%= blogpost.image %>')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1><%= blogpost.title %></h1>
+                            <h2 class="subheading"><%= blogpost.body %></h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on August 24, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <%= blogpost.body %>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <%- include('layout/footer') -%>
+
+        <!-- Bootstrap core JS-->
+        <%- include('layout/scripts') -%>
+
+    </body>
+</html>

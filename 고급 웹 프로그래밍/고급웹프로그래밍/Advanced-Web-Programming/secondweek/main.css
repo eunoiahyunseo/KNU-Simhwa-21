@@ -1,0 +1,25 @@
+body,
+body::before,
+body::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.griContainer {
+  display: grid;
+  background-color: grey;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  min-height: 1000px;
+}
+
+.griContainer div {
+  background-color: red;
+}

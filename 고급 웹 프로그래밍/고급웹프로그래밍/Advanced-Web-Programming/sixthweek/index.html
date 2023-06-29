@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main.css" rel="stylesheet">
+    <title>JS Practice</title>
+</head>
+<body>
+    <div id="digClock">
+
+    </div>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    
+    <!-- <script>
+        let data = [];
+        for(let i = 0; i < 10; i++) {
+            data = [...data, [`${i}-0`,`${i}-1`,`${i}-2`]];
+        }
+        
+        data.map((data_row) => {
+            data_row.map((eachData) => {
+                document.write(eachData + " ");
+            }) 
+            document.write("<p />");
+        })
+    </script>
+    <script>
+        const digClock = function() {
+            const today = new Date();
+            
+            const day = today.getMonth() + 1 + "월 " + today.getDate() + "일 ";
+            const time = today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+
+            document.getElementById('digClock').innerHTML = day + time;
+            setTimeout(digClock, 1000);
+
+        }
+        digClock();
+    </script> -->
+
+    <script>
+        function add() {
+            const header = document.createElement('h3');
+            const textNode = document.createTextNode('내 이름은 홍길동입니다.');
+
+            header.appendChild(textNode);
+            document.body.appendChild(header);
+        }
+
+        add();
+    </script>
+    <script>
+        const para = document.createElement('p');
+        const node = document.createTextNode('This is new');
+        para.appendChild(node);
+
+        const element = document.getElementById('div1');
+
+        element.insertBefore(para, element.firstChild);
+        console.log(element.childNodes);
+    </script>
+    <script>
+        function add() {
+            const img = document.createElement('img');
+            
+            img.setAttribute('src', 'test.jpg');
+            img.setAttribute('alt', 'test image');
+            img.setAttribute('width', 100);
+            
+            img.style.cssText = 'object-fit: cover';
+            
+            document.body.appendChild(img);
+        }
+        add();
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>

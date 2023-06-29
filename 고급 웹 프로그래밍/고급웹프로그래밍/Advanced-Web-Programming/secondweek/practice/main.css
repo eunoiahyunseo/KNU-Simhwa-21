@@ -1,0 +1,346 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#attr-selec {
+  padding: 10px;
+}
+#attr-selec p + p {
+  margin-top: 10px;
+}
+
+#attr-selec p[text] {
+  color: red;
+}
+
+#attr-selec p[text="red"] {
+  color: yellow !important;
+  background-color: purple;
+}
+
+#attr-selec p[text~="bb"] {
+  color: yellow !important;
+  background-color: green;
+}
+
+#attr-selec p[text|="a1"] {
+  color: yellow !important;
+  background-color: blue;
+}
+
+#attr-selec p[text^="img"] {
+  color: yellow !important;
+  background-color: red;
+}
+
+#attr-selec p[text$="png"] {
+  color: yellow !important;
+  background-color: gray;
+}
+
+#attr-selec p[text*="seo"] {
+  color: yellow;
+  background-color: pink;
+}
+
+#pseudo-selector span:after {
+  content: "";
+  padding: 0;
+  margin: 30px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 100px solid #ccc;
+  border-top-color: red;
+  border-right-color: yellow;
+  border-bottom-color: blue;
+  border-left-color: hotpink;
+}
+
+#pseudo-selector p {
+  position: relative;
+  width: 100px;
+  background: #000;
+  height: 4rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 30px;
+  line-height: 4rem;
+}
+
+#pseudo-selector p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid;
+  border-top-color: #000;
+}
+
+#box-shadow {
+  margin: 10px 20px;
+}
+#box-shadow img[src*="jpg"] {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+#box-shadow .shadow1 {
+  box-shadow: 5px 10px 10px #000;
+}
+
+#box-shadow .shadow2 {
+  box-shadow: 5px -5px 20px#000;
+}
+
+#position {
+  position: relative;
+  background: violet;
+  width: 300px;
+  height: 6rem;
+  margin-bottom: 100px;
+}
+
+#position .ap1 {
+  position: absolute;
+  background-color: skyblue;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+#position .ap2 {
+  position: fixed;
+  background-color: bisque;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+#position .ap2:before {
+  content: "asdf";
+  position: absolute;
+  display: block;
+  background-color: green;
+  bottom: -10px;
+  left: 100px;
+  width: 30%;
+}
+
+#float > p > img {
+  width: 140px;
+  height: 140px;
+
+  float: left;
+  margin: 0 0 10px 10px;
+  object-fit: cover;
+}
+
+#float {
+  background-color: #eee;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+}
+
+#float > #header {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 28px 10px;
+  margin-bottom: 20px;
+}
+
+#float > #navigation {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 4px;
+  margin-bottom: 30px;
+}
+
+#float > #wrap > #aside {
+  float: left;
+  width: 40%;
+  background-color: #fff;
+  margin: 0 1% 1% 0;
+  border-radius: 10px;
+  padding: 1% 4%;
+}
+
+#float > #wrap #sub-section1 {
+  width: 55%;
+  float: right;
+  background-color: #fff;
+  margin: 0 1% 3% 0;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+
+#float > #wrap #sub-section2 {
+  width: 55%;
+  float: right;
+  background-color: #fff;
+  margin: 0 1% 1% 0;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+
+#float > #wrap:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#float > #footer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+
+#block-inline .in {
+  margin: 10px;
+}
+#block-inline .in li {
+  display: inline;
+  background-color: yellow;
+  border: 1px solid blue;
+  margin: 3px;
+  padding: 5px;
+}
+
+#gradient div + div {
+  margin-top: 30px;
+}
+
+#gradient #grad1 {
+  height: 70px;
+  background: linear-gradient(to left, red, yellow);
+}
+
+#gradient #grad2 {
+  height: 70px;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+#gradient #grad3 {
+  height: 70px;
+  background: radial-gradient(yellow, green);
+}
+
+#gradient #grad4 {
+  height: 100px;
+  width: 150px;
+  background: radial-gradient(circle, red, yellow, green);
+}
+
+#gradient #grad5 {
+  width: 250px;
+  height: 100px;
+  background: linear-gradient(135deg, rgb(207, 156, 187) 40%, rgb(195, 204, 86));
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+#transform img {
+  display: block;
+  width: 40%;
+  height: 300px;
+  margin: auto;
+  object-fit: cover;
+  transform: skew(20deg, 10deg) scale(1.2);
+}
+
+#transform .c1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background: yellow;
+}
+#transform .c1:hover {
+  transform-origin: 50% 50% 0px;
+
+  transform: translate(0px, 0px) rotate(-45deg) scale(0.7);
+  background: green;
+}
+
+#transition div {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  border: 5px solid black;
+  transition: all 5s ease 3s;
+}
+
+#transition div:hover {
+  transform: rotate(180deg);
+}
+
+#animation div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: colorbox 4s ease alternate;
+  animation-iteration-count: 2;
+  animation-delay: 1s;
+}
+
+#animation div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes colorbox {
+  from {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: orange;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background: yellow;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 300px;
+  }
+  to {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}

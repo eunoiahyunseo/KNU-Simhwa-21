@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- <h3>이미지에 제목 추가하기</h3>
+    <figure style="margin: 0px">
+        <img src="test.jpg" alt="Test Logo" title="naver 홈페이지" width="200px" height="auto">
+        <figcaption>[그림1] Test</figcaption>
+    </figure> -->
+
+    <fieldset>
+        <legend>Form 실습</legend>
+        <form action="/test.php" method="POST">
+            <label for="name">이름 : </label>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="major">전공 : </label>
+            <input type="text" id="major" name="major"><br>
+    
+            <textarea rows="5" cols="50"></textarea><br>
+            
+            <h3>당신은 몇 학년 입니까?</h3>
+            <input type="radio" name="year" value="1" checked>1학년
+            <input type="radio" name="year" value="2">2학년
+            <input type="radio" name="year" value="3">3학년
+            <input type="radio" name="year" value="4">4학년 <br>
+
+            <select name="subjects" size="4" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Jquery">Jquery</option>
+            </select><br>
+
+            <select name="major2">
+                <optgroup label="computer">
+                    <option>Software</option>
+                    <option>Robot</option>
+                    <option>System</option>
+                </optgroup>
+                <optgroup label="language">
+                    <option selected>Korea</option>
+                    <option>English</option>
+                    <option>China</option>
+                    <option>Germany</option>
+                </optgroup>
+            </select><br>
+            
+            <label for="majorlist">전공 분야를 입력하세요</label>
+            <input type="text" list="majorlist" name="major3">
+            <datalist id="majorlist">
+                <option value="Software">소프트웨어</option>
+                <option value="Robot">로봇</option>
+                <option value="System">시스템</option>
+                <option value="Service">서비스</option>
+                <option value="Education">교육</option>
+            </datalist><br>
+
+            <h3>이메일을 정확하게 입력하세요</h3>
+            이메일 : <input type="email" name="email">
+        
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </fieldset>
+</body>
+</html>
