@@ -1,0 +1,2 @@
+
+    countMoney(firstMoneyCount);

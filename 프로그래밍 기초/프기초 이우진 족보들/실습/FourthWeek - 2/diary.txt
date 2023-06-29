@@ -1,0 +1,8 @@
+10.10 Transportation 3000
+10.10 Lunch 4000
+10.11 Transportation 5000
+10.12 Lunch 6000
+10.12 Dinner 7000
+11.10 Lunch 5000
+11.10 Beverage 1500
+11.11 Lunch 5000
