@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.iconOuter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+input[id="menuicon"] {
+    display: none;
+}
+
+input[id="menuicon"] + label {
+    display: block;
+    width: 1.6rem;
+    height: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+input[id="menuicon"] {
+    display: none;
+}
+
+input[id="menuicon"] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: rgb(30, 35, 39);
+    transition: all .35s;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"] + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"] + label span:nth-child(3) {
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+// label을 클릭하면 nav바가 튀어나온다. 이 떄 본문을 밀어주고 싶다.
+input[id="menuicon"]:checked + label + div {
+    left: 0;
+}
+
+input[id="menuicon"] + label {
+    z-index: 101;
+    position: fixed;
+    left: 1rem;
+    top: 1.4rem;
+    transition: all .5s ease;
+}
+
+a {
+    text-decoration: none;
+}

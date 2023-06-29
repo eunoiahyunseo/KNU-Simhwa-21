@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+$cyan-color: #0c8599;
+.styledinputWithIcon > .styledinput:valid + label,
+.styledinputWithIcon > .styledinput:focus + label {
+    transform: translate(-30px, -250%);
+    color: $cyan-color;
+}
+
+
+.styledinputWithIcon > .styledinput:focus,
+.styledinputWithIcon > .styledinput:valid{
+    border-bottom: 1.6px solid $cyan-color;
+}
+
+
+.styledinputWithIcon > .styledinput:focus {
+    letter-spacing: 1.2px;
+    color: $cyan-color;
+}
