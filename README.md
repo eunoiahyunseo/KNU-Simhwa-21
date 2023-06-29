@@ -1,6 +1,5 @@
-# KNU-simhwa-repo
-# KNU-Simhwa-21
-# KNU-Simhwa-21
-# KNU-Simhwa-21
-# KNU-Simhwa-21
-# KNU-Simhwa-21
+# KNU 컴퓨터학부 심화컴퓨터학과 21학번 기준 (1.1~3-1)
+
+필요하신 내용 있으면 가능한 선에서 추가해드리겠습니다. 
+이슈나 heart20021010@gmail.com 메일 주세요
+여기저기 막 공유하지는 말아주세요
